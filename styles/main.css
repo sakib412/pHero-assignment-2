@@ -46,12 +46,12 @@ img {
   font-size: 1.7rem;
   font-weight: 700;
   padding: 1.1rem 2.5rem;
-  border-radius: 3rem;
   text-decoration: none;
 }
 
 .btn-primary {
   color: var(--color-white);
+  border-radius: 3rem;
   background-color: var(--color-primary);
   border: 2px solid var(--color-primary);
   transition: all 0.3s ease;
@@ -85,7 +85,7 @@ img {
 /* Header */
 
 .header {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,7 +110,6 @@ img {
   text-decoration: none;
   color: var(--color-black);
   font-size: 1.8rem;
-  font-weight: 700;
 
 }
 
@@ -173,7 +172,7 @@ img {
 /* Popular collection */
 #collection-section {
   margin: 5rem auto;
-  padding: 2rem 8rem;
+  padding: 2rem 5rem;
 }
 
 .products {
@@ -242,6 +241,54 @@ img {
   font-size: 1.4rem;
   font-weight: 300;
 }
+
+/* Footer */
+footer#footer {
+  background-color: #0A0826;
+  padding: 3rem 2rem;
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.footer-des {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: var(--color-white);
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo .fab {
+  display: inline-block;
+  font-size: 1.8rem;
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  transition: all 0.5s ease;
+}
+
+.footer-logo .fab:hover {
+  background-color: var(--color-primary);
+}
+
+.footer-logo a {
+  text-decoration: none;
+}
+
+.footer-logo a:not(:last-child) {
+  margin-right: 1rem;
+}
+
 
 
 /*---------------
