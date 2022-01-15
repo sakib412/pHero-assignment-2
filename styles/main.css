@@ -53,6 +53,26 @@ img {
 .btn-primary {
   color: var(--color-white);
   background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  color: var(--color-primary);
+  font-weight: normal;
+  background-color: var(--color-white);
+}
+
+.btn-secondary {
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  color: var(--color-primary);
+  transition: all 0.3s ease-in;
+}
+
+.btn-secondary:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .section-title {
@@ -153,7 +173,7 @@ img {
 /* Popular collection */
 #collection-section {
   margin: 5rem auto;
-  padding: 2rem 5rem;
+  padding: 2rem 8rem;
 }
 
 .products {
@@ -161,6 +181,12 @@ img {
   column-gap: 2rem;
   row-gap: 2.5rem;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.collection-section-button {
+  display: inline-block;
+  margin-top: 2rem;
+  float: right;
 }
 
 .product-card {
