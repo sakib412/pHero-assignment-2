@@ -1,0 +1,170 @@
+/* Reseting */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* this defines what 1rem is */
+  /*1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color-black);
+}
+
+/* Variables */
+:root {
+  --color-primary: #E02C6D;
+  --color-white: #fff;
+  --color-black: #3A3A3A;
+}
+
+/* common */
+img {
+  width: 100%;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 1.1rem 2.5rem;
+  border-radius: 3rem;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+/* Header */
+
+.header {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+  padding: 2rem 1.5rem;
+}
+
+.menu li a, .menu li .fas {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 1.8rem;
+  font-weight: 700;
+
+}
+
+/* Hero Section */
+
+#hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-details {
+  width: 55%;
+}
+
+.hero-title {
+  font-size: 5rem;
+  color: var(--color-black);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.hero-details p {
+  font-size: 1.7rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  padding-right: 3rem;
+}
+
+.hero-image {
+  width: 45%;
+}
+
+.hero-image img {
+  padding: 5rem;
+}
+
+
+/* Partnar Section */
+
+
+.partnar-container {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg,
+      rgba(201, 198, 198, 0.25) 0%,
+      rgba(160, 156, 156, 0.8) 50%,
+      rgba(201, 198, 198, 0.25) 100%);
+  border-image-slice: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 5rem auto;
+}
+
+.partnar-container img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+/*---------------
+   Media Query 
+ --------------*/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
